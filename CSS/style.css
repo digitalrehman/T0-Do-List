@@ -1,0 +1,174 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    }
+    
+    .container .video video {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        opacity: 0.7;
+    }
+    
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20%;
+        gap: 10px;
+    }
+    
+    .form input[type=search] {
+        width: 35%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        padding: 2.5vh 1.2vw;
+        border-radius: 8px;
+        font-size: 18px;
+        outline: none;
+        border: none;
+    }
+    
+    .form button {
+        padding: 2.6vh 1.2vh;
+        font-size: 15px;
+        border-radius: 8px;
+        background-color: gainsboro;
+        color: black;
+        outline: none;
+        border: 1px solid black;
+        font-weight: 700;
+        transition: all 0.3s ease;
+    }
+    
+    .form button:hover {
+        box-shadow: 4px 4px 6px black;
+    }
+    
+    .section {
+        background-color: transparent;
+        width: 50%;
+        margin: 6vh auto;
+        padding: 1px 0px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px black, -2px -2px 5px black;
+    }
+    
+    .chat {
+        display: flex;
+        align-items: center;
+        margin: 5vh auto;
+        width: 96%;
+        border-radius: 5px;
+        height: 70px;
+        background-color: white;
+        justify-content: space-between;
+    }
+    
+    .chat h3 {
+        color: black;
+        padding-left: 10px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        width: 65%;
+    }
+    
+    .btn a {
+        margin-right: 8px;
+        color: snow;
+        text-decoration: snow;
+        padding: 10px 15px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: all 0.5s ease;
+        border-radius: 4px;
+    }
+    
+    .btn .btn-1:hover {
+        background-color: gray;
+        box-shadow: 2px 2px 3px black;
+    }
+    
+    .btn .btn-1 {
+        background-color: black;
+    }
+    
+    .btn .btn-2 {
+        background-color: red;
+    }
+    
+    .btn .btn-2:hover {
+        background-color: tomato;
+        box-shadow: 2px 2px 3px black;
+    }
+    
+    .clear button {
+        margin-top: 16vh;
+        margin-left: 46%;
+        color: snow;
+        outline: none;
+        border: none;
+        padding: 12px 15px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: all 0.3s ease;
+        border-radius: 6px;
+        background-color: red;
+    }
+    
+    .clear button:hover {
+        box-shadow: 3px 3px 5px black;
+        color: snow;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .form input[type=search] {
+            width: 60%;
+        }
+        .section {
+            width: 80%;
+        }
+        .form {
+            margin-top: 5%
+        }
+        .btn a {
+            font-weight: 500;
+            flex-direction: row;
+            margin: 2px 5px;
+            padding: 7px 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .form input[type=search] {
+            width: 60%;
+        }
+        .form {
+            margin-top: 10%;
+        }
+        .section {
+            width: 80%;
+        }
+        .clear button {
+            margin-top: 10vh;
+            margin-left: 43%;
+        }
+        .btn a {
+            font-weight: 500;
+            flex-direction: row;
+            margin: 2px 0.5px;
+            padding: 7px 8px;
+        }
+    }
